@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>거리 측정 앱</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>거리 측정 앱</h1>
+    <p>OpenStreetMap Nominatim으로 출발지와 도착지를 검색하고 총거리를 계산합니다.</p>
+
+    <div class="form-card">
+      <label for="start">출발지</label>
+      <input id="start" type="text" placeholder="예: 서울역" />
+      <label for="end">도착지</label>
+      <input id="end" type="text" placeholder="예: 광화문" />
+      <button id="calculateBtn">거리 계산하기</button>
+    </div>
+
+    <section class="result-card" hidden>
+      <div id="status" class="status"></div>
+      <div id="distance" class="distance"></div>
+      <a id="mapLink" class="map-link" href="#" target="_blank" rel="noopener">지도에서 보기</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
